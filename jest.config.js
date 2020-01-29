@@ -27,7 +27,7 @@ module.exports = {
   roots: ['<rootDir>/addons', '<rootDir>/examples/official-storybook'],
   transform: {
     '^.+\\.[jt]sx?$': '<rootDir>/scripts/babel-jest.js',
-    '^.+\\.mdx$': '@storybook/addon-docs/jest-transform-mdx',
+    '^.+\\.mdx$': '<rootDir>/scripts/jest-transform-mdx.js',
   },
   testMatch: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
   testPathIgnorePatterns: ['/node_modules/', '/dist/'],
