@@ -48,7 +48,7 @@ jobs:
           at: .
       - run:
           name: Run chromatic on the pre-built official example
-          command: yarn chromatic --storybook-build-dir="built-storybooks/official-storybook" --exit-zero-on-changes --app-code="ab7m45tp9p"
+          command: yarn chromatic --storybook-build-dir="built-storybooks/official-storybook" --exit-zero-on-changes --app-code="wwy23j22kcl"
 
   examples:
     <<: *defaults
