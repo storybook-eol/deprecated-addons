@@ -106,9 +106,6 @@ workflows:
       - lint:
           requires:
             - build
-      - examples:
-          requires:
-            - build
       - smoke-tests:
           requires:
             - build
