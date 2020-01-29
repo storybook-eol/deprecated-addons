@@ -53,6 +53,9 @@ jobs:
           name: Build Storybook
           command: yarn build-storybook
       - run:
+          name: Check pwd
+          command: pwd
+      - run:
           name: Run chromatic on the pre-built official example
           command: yarn chromatic
 
