@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build-storybook": "build-storybook -c ./",
-    "chromatic": "chromatic --storybook-build-dir=\"storybook-static\" --app-code=\"wwy23j22kcl\"",
+    "chromatic": "pwd && chromatic --storybook-build-dir=\"storybook-static\" --app-code=\"wwy23j22kcl\"",
     "debug": "cross-env NODE_OPTIONS=--inspect-brk start-storybook -p 9011 -c ./ --no-dll",
     "graphql": "node ./graphql-server/index.js",
     "storybook": "start-storybook -p 9011 -c ./ --no-dll"
