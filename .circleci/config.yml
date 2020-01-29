@@ -54,7 +54,7 @@ jobs:
           command: yarn build-storybook
       - run:
           name: Run chromatic on the pre-built official example
-          command: yarn chromatic --storybook-build-dir="storybook-static" --app-code="wwy23j22kcl"
+          command: yarn chromatic
 
   smoke-tests:
     <<: *defaults

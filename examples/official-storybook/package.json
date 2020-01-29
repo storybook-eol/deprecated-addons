@@ -3,11 +3,11 @@
   "version": "6.0.0-alpha.1",
   "private": true,
   "scripts": {
-    "build-storybook": "cross-env build-storybook -c ./",
-    "chromatic": "chromatic",
+    "build-storybook": "build-storybook -c ./",
+    "chromatic": "chromatic --storybook-build-dir=\"storybook-static\" --app-code=\"wwy23j22kcl\"",
     "debug": "cross-env NODE_OPTIONS=--inspect-brk start-storybook -p 9011 -c ./ --no-dll",
     "graphql": "node ./graphql-server/index.js",
-    "storybook": "cross-env start-storybook -p 9011 -c ./ --no-dll"
+    "storybook": "start-storybook -p 9011 -c ./ --no-dll"
   },
   "devDependencies": {
     "@storybook/addon-actions": "6.0.0-alpha.1",
