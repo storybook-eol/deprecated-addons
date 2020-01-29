@@ -1,6 +1,6 @@
 import React from 'react';
 
-import BaseButton from '../../../components/BaseButton';
+import BaseButton from '../../components/BaseButton';
 import markdownNotes from './notes.md';
 
 const markdownString = `
