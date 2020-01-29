@@ -23,32 +23,17 @@ module.exports = {
     'core-js/library/fn/object/assign': 'core-js/es/object/assign',
     'react-syntax-highlighter/dist/esm/(.*)': 'react-syntax-highlighter/dist/cjs/$1',
   },
-  projects: [
-    '<rootDir>',
-  ],
-  roots: [
-    '<rootDir>/addons',
-    '<rootDir>/examples/official-storybook',
-  ],
+  projects: ['<rootDir>'],
+  roots: ['<rootDir>/addons', '<rootDir>/examples/official-storybook'],
   transform: {
     '^.+\\.[jt]sx?$': '<rootDir>/scripts/babel-jest.js',
     '^.+\\.mdx$': '@storybook/addon-docs/jest-transform-mdx',
   },
   testMatch: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
-  testPathIgnorePatterns: [
-    '/node_modules/',
-    '/dist/',
-  ],
+  testPathIgnorePatterns: ['/node_modules/', '/dist/'],
   collectCoverage: false,
-  collectCoverageFrom: [
-    'addons/**/*.{js,jsx,ts,tsx}',
-  ],
-  coveragePathIgnorePatterns: [
-    '/node_modules/',
-    '/dist/',
-    '/__mocks__ /',
-    '/__testfixtures__/',
-  ],
+  collectCoverageFrom: ['addons/**/*.{js,jsx,ts,tsx}'],
+  coveragePathIgnorePatterns: ['/node_modules/', '/dist/', '/__mocks__ /', '/__testfixtures__/'],
   globals: {
     DOCS_MODE: false,
     PREVIEW_URL: undefined,
