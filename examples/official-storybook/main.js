@@ -1,27 +1,9 @@
 module.exports = {
   stories: [
-    // FIXME: Breaks e2e tests './intro.stories.mdx',
-    '../../lib/ui/src/**/*.stories.(js|tsx|mdx)',
-    '../../lib/components/src/**/*.stories.(js|tsx|mdx)',
     './stories/**/*.stories.(js|tsx|mdx)',
   ],
   addons: [
-    '@storybook/addon-docs',
-    '@storybook/addon-storysource',
-    '@storybook/addon-design-assets',
-    '@storybook/addon-actions',
-    '@storybook/addon-links',
-    '@storybook/addon-events',
     '@storybook/addon-notes',
-    '@storybook/addon-options',
-    '@storybook/addon-knobs',
-    '@storybook/addon-cssresources',
-    '@storybook/addon-backgrounds',
-    '@storybook/addon-a11y',
-    '@storybook/addon-jest',
-    '@storybook/addon-viewport',
-    '@storybook/addon-graphql',
-    '@storybook/addon-contexts',
   ],
   webpackFinal: async (config, { configType }) => ({
     ...config,
