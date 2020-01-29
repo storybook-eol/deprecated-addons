@@ -1,10 +1,6 @@
 module.exports = {
-  stories: [
-    './stories/**/*.stories.(js|tsx|mdx)',
-  ],
-  addons: [
-    '@storybook/addon-notes',
-  ],
+  stories: ['./stories/**/*.stories.(js|tsx|mdx)'],
+  addons: ['@storybook/addon-notes'],
   webpackFinal: async (config, { configType }) => ({
     ...config,
     module: {

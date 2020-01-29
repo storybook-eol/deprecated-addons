@@ -47,24 +47,15 @@ jobs:
       - attach_workspace:
           at: .
       - run:
-          name: Run chromatic on the pre-built official example
-          command: yarn chromatic --storybook-build-dir="built-storybooks/official-storybook" --exit-zero-on-changes --app-code="wwy23j22kcl"
-
-  examples:
-    <<: *defaults
-    parallelism: 1
-    steps:
-      - checkout
-      - attach_workspace:
-          at: .
+          name: Go to example
+          command: cd examples/official-storybook
       - run:
-          name: examples
-          command: |
-            yarn build-storybooks
-      - persist_to_workspace:
-          root: .
-          paths:
-            - built-storybooks
+          name: Build Storybook
+          command: yarn build-storybook
+      - run:
+          name: Run chromatic on the pre-built official example
+          command: yarn chromatic --storybook-build-dir="storybook-static" --app-code="wwy23j22kcl"
+
   smoke-tests:
     <<: *defaults
     steps:
@@ -129,4 +120,4 @@ workflows:
             - test
       - chromatic:
           requires:
-            - examples
+            - build
