@@ -47,17 +47,11 @@ jobs:
       - attach_workspace:
           at: .
       - run:
-          name: Go to example
-          command: cd examples/official-storybook
-      - run:
-          name: Build Storybook
-          command: yarn build-storybook
-      - run:
-          name: Check pwd
-          command: pwd
-      - run:
           name: Run chromatic on the pre-built official example
-          command: yarn chromatic
+          command: | 
+            cd examples/official-storybook
+            yarn build-storybook
+            yarn chromatic
 
   smoke-tests:
     <<: *defaults
