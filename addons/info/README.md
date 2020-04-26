@@ -1,6 +1,8 @@
-# Storybook Info Addon
+# Storybook Info Addon (Deprecated)
 
-Storybook Info Addon will show additional information for your stories in [Storybook](https://storybook.js.org).
+> NOTE: `addon-info` has been superceded by `addon-docs`, which fixes numerous bugs, supports a richer feature set, and is easier to maintain. Please give it a try! https://medium.com/storybookjs/storybook-docspage-e185bc3622bf
+
+Storybook Info Addon showcases additional information for your stories in [Storybook](https://storybook.js.org).
 Useful when you want to display usage or other types of documentation alongside your story.
 
 [Framework Support](https://github.com/storybookjs/storybook/blob/master/ADDONS_SUPPORT.md)
