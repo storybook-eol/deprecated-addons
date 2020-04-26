@@ -1,4 +1,6 @@
-# Storybook Addon Notes
+# Storybook Addon Notes (Deprecated)
+
+> NOTE: `addon-notes` has been superceded by `addon-docs`, which fixes numerous bugs, supports a richer feature set, and is easier to maintain. Please give it a try! https://medium.com/storybookjs/rich-docs-with-storybook-mdx-61bc145ae7bc
 
 Storybook Addon Notes allows you to write notes (text or HTML) for your stories in [Storybook](https://storybook.js.org).
 
